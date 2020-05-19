@@ -41,3 +41,22 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 ```
+
+# 3. ユーザ認証周りの設定
+
+* 認証周りのUI作成
+
+```
+$ composer require laravel/ui
+$ php artisan ui vue --auth
+$ npm install
+$ npm run dev
+```
+
+* データベースのmigrate。以下のコマンドで最低限のユーザのテーブルが作成される。
+
+```
+$ php artisan migrate
+```
+
+
